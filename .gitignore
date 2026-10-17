@@ -1,0 +1,84 @@
+# ==============================================================================
+# Text2Swarm .gitignore
+# ==============================================================================
+
+# --- Model Weights & Large Checkpoint Caches ---
+point_e_model_cache/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+
+# --- Pipeline Outputs & Generated Formations ---
+outputs/
+*.npy
+*.npz
+*_comparison.html
+*.html
+
+# --- Jupyter Notebook Artifacts ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*-checkpoint.ipynb
+
+# --- Python Bytecode & Runtime Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDEs & Editors ---
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Operating System Artifacts ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Logs, Diagnostics & Temporary Files ---
+*.log
+logs/
+temp/
+tmp/
+scratch/
