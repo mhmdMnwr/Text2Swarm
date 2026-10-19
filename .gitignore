@@ -2,7 +2,15 @@
 # Text2Swarm .gitignore
 # ==============================================================================
 
-# --- Model Weights & Large Checkpoint Caches ---
+# --- Dataset Caches & Raw Downloads ---
+keypointnet_data/
+data/keypointnet_data/
+*.npy
+*.npz
+data/*.npy
+data/*.npz
+
+# --- Model Weights & Cache Directories ---
 point_e_model_cache/
 *.pt
 *.pth
@@ -11,12 +19,10 @@ point_e_model_cache/
 *.safetensors
 *.onnx
 
-# --- Pipeline Outputs & Generated Formations ---
+# --- Pipeline Outputs & Temporary Artifacts ---
 outputs/
-*.npy
-*.npz
-*_comparison.html
 *.html
+*_comparison.html
 
 # --- Jupyter Notebook Artifacts ---
 .ipynb_checkpoints/
@@ -76,9 +82,14 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# --- Logs, Diagnostics & Temporary Files ---
+# --- Logs, Diagnostics & Scratch Scripts ---
 *.log
 logs/
 temp/
 tmp/
 scratch/
+make_notebook.py
+make_rag_notebook.py
+test_pipeline.py
+test_min_drones_plot.py
+extract_references.py
